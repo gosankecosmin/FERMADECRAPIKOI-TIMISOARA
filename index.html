@@ -4,17 +4,38 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ferma de crapi Koi – Magazin</title>
-  <meta name="description" content="Magazin simplu de prezentare pentru crapi Koi, filtre, echipamente și servicii – model ready‑to‑use, un singur fișier." />
+  <meta name="description" content="Magazin de prezentare pentru crapi Koi, filtre și servicii în Timișoara: selecții A–Show, echipamente, proiectare iazuri, livrare rapidă." />
+  <link rel="canonical" href="https://gosankecosmin.github.io/FERMADECRAPIKOI-TIMISOARA/" />
+  <meta name="robots" content="index,follow" />
+  <meta name="theme-color" content="#0f172a" />
+  <!-- Open Graph / Facebook -->
+  <meta property="og:site_name" content="Ferma de crapi Koi" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://gosankecosmin.github.io/FERMADECRAPIKOI-TIMISOARA/" />
+  <meta property="og:title" content="Ferma de crapi Koi – Magazin" />
+  <meta property="og:description" content="Koi selecții A–Show, echipamente și servicii profesionale. Timișoara, livrare rapidă." />
+  <meta property="og:image" content="koi1.jpg" />
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Ferma de crapi Koi – Magazin" />
+  <meta name="twitter:description" content="Koi selecții A–Show, echipamente și servicii profesionale." />
+  <meta name="twitter:image" content="koi1.jpg" />
+  <!-- Favicon (poți schimba cu logo-ul tău) -->
+  <link rel="icon" href="koi2.jpg" />
+  <!-- Preload imagini mari pentru viteză -->
+  <link rel="preload" as="image" href="koi1.jpg" />
+  <link rel="preload" as="image" href="koi2.jpg" />
+  <link rel="preload" as="image" href="koi3.jpg" />
   <style>
     :root{
-      --bg:#0f172a;
-      --card:#111827ee;
-      --muted:#94a3b8;
-      --text:#e5e7eb;
-      --brand:#06b6d4;
-      --brand-2:#22d3ee;
-      --ok:#10b981;
-      --danger:#ef4444;
+      --bg:#0f172a;        /* slate-900 */
+      --card:#111827ee;    /* gray-900 */
+      --muted:#94a3b8;     /* slate-400 */
+      --text:#e5e7eb;      /* gray-200 */
+      --brand:#06b6d4;     /* cyan-500 */
+      --brand-2:#22d3ee;   /* cyan-400 */
+      --ok:#10b981;        /* emerald-500 */
+      --danger:#ef4444;    /* red-500 */
       --shadow: 0 10px 25px rgba(0,0,0,.45);
       --radius: 18px;
     }
@@ -100,6 +121,7 @@
       </div>
     </section>
 
+    <!-- KOI LISTING -->
     <section id="koi">
       <h2>Koi disponibili</h2>
       <p class="muted">(Schimbă imaginile <span class="kbd">koi1.jpg</span>, <span class="kbd">koi2.jpg</span>, <span class="kbd">koi3.jpg</span> cu fotografiile tale – pune fișierele lângă acest index.html)</p>
@@ -152,6 +174,7 @@
       </div>
     </section>
 
+    <!-- FILTRE & ECHIPAMENTE -->
     <section id="filtre">
       <h2>Filtre & echipamente</h2>
       <div class="grid">
@@ -199,6 +222,7 @@
       </table>
     </section>
 
+    <!-- SERVICII -->
     <section id="servicii">
       <h2>Servicii</h2>
       <div class="grid">
@@ -209,11 +233,13 @@
       </div>
     </section>
 
+    <!-- DESPRE -->
     <section id="despre">
       <h2>Despre noi</h2>
       <p class="muted">Cumpărăm direct de la crescători consacrați (linii Dainichi, Hoshikin, Tazawa). Transport în 24–48h, garanție DOA, suport tehnic post‑vânzare. Vizite la fermă cu programare.</p>
     </section>
 
+    <!-- CONTACT -->
     <section id="contact">
       <h2>Contact</h2>
       <div class="grid">
@@ -253,6 +279,7 @@
     </footer>
   </main>
 
+  <!-- Floating WhatsApp -->
   <div class="floating-wa">
     <a href="https://wa.me/40700000000" target="_blank" rel="noopener">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.966-.273-.099-.472-.148-.672.15-.198.297-.768.966-.94 1.164-.173.199-.347.224-.644.075-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.373-.025-.522-.075-.149-.672-1.62-.921-2.218-.242-.58-.487-.502-.672-.511-.173-.009-.372-.011-.571-.011-.198 0-.52.074-.792.372-.273.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.08 4.487.709.306 1.262.489 1.694.626.712.227 1.36.195 1.872.118.571-.085 1.758-.718 2.006-1.41.248-.69.248-1.282.173-1.41-.074-.129-.272-.198-.57-.347z"/></svg>
@@ -261,7 +288,25 @@
   </div>
 
   <script>
+    // anul curent în footer
     document.getElementById('y').textContent = new Date().getFullYear();
   </script>
+
+  <!--
+  === INSTRUCȚIUNI RAPIDE ===
+  1) Salvează acest fișier ca "index.html" într-un folder gol.
+  2) Pune în același folder imaginile tale și redenumește-le exact așa:
+     - koi1.jpg  (imagine fundal & card 1)
+     - koi2.jpg  (card 2)
+     - koi3.jpg  (card 3)
+     - filtru.jpg (card filtru)
+     - uv.jpg     (card UV)
+  3) Dublu‑click pe index.html – site-ul se deschide local în browser.
+  4) Editează textele/prețurile direct în fișier (cu Notepad, VS Code).
+  5) Pentru publicare, urcă folderul pe hosting (de ex. Netlify, GitHub Pages, cPanel). Nu ai nevoie de subfoldere.
+  6) Butonul WhatsApp: înlocuiește 40700000000 cu numărul tău (format internațional, fără +).
+
+  Notă legală: Structura și stilul sunt originale. Nu copiem conținut sau media de pe koiaqua.de.
+  -->
 </body>
 </html>
